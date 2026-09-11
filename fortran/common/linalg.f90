@@ -39,7 +39,7 @@ module linalg_mod
 !
 ! Started: July 2020
 !
-! Last Modified: Fri 13 Feb 2026 05:11:41 PM CET
+! Last Modified: Fri 11 Sep 2026 03:07:35 PM CST
 !--------------------------------------------------------------------------------------------------!
 
 implicit none
@@ -2226,7 +2226,7 @@ function trueloc(x) result(loc)
 ! Similar to the `find` function in MATLAB, TRUELOC returns the indices where X is true in
 ! the ASCENDING order.
 ! The motivation for this function is the fact that Fortran does not support logical indexing. See,
-! for example, https:
+! for example, https://fortran-lang.discourse.group/t/indexing-arrays-by-an-array-of-logicals
 ! 1. MATLAB, Python, Julia, and R support logical indexing, so that the Fortran code Y(TRUELOC(X))
 ! can simply be translated to Y(X).
 ! 2. If the return of TRUELOC is NOT used for indexing, its analogs in other languages are:
